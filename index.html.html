@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BDR7k - Apostas Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>BDR7k - Seu site de apostas</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#" id="loginBtn">Login</a>
+        <a href="#" id="registerBtn">Registrar</a>
+        <a href="#">Apostas ao Vivo</a>
+        <a href="#">Casino</a>
+        <a href="#">Esportes</a>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container">
+        <h2>Bem-vindo ao BDR7k!</h2>
+        <p>Faça suas apostas em diversos esportes e eventos ao vivo. Ganhe bônus e promoções exclusivas!</p>
+
+        <!-- Bet Section -->
+        <div class="bet-section">
+            <h3>Apostas Esportivas</h3>
+            <button onclick="placeBet()">Fazer uma Aposta</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 BDR7k. Todos os direitos reservados.
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="login-modal modal">
+        <span class="close-btn" onclick="closeModal('login')">&times;</span>
+        <div class="modal-header">Login</div>
+        <input type="text" placeholder="Usuário" id="loginUser">
+        <input type="password" placeholder="Senha" id="loginPass">
+        <button onclick="login()">Entrar</button>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="register-modal modal">
+        <span class="close-btn" onclick="closeModal('register')">&times;</span>
+        <div class="modal-header">Registrar</div>
+        <input type="text" placeholder="Usuário" id="registerUser">
+        <input type="email" placeholder="Email" id="registerEmail">
+        <input type="password" placeholder="Senha" id="registerPass">
+        <button onclick="register()">Registrar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
